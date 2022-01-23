@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #0044aa, #0154bb, #0464cb, #0974db, #1284eb);
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+.card1 {
+  background: rgb(19, 19, 156);
+  grid-column: 1/2;
+  grid-row: 5/10;
+  border-radius: 20px;
+  transition: transform 1s linear;
+
+}
+.card1:hover {
+  transform: scale(1.1);
+  transform: rotate(-90deg);
+  transition: transform 1s linear;
+}
+.card2 {
+  background: rgb(10, 149, 138);
+  grid-column: 2/4;
+  grid-row: 7/9;
+  opacity: 50%;
+  transition: transform 1.5s linear;
+  border-radius: 50%;
+}
+.card2:hover {
+  transform: translate(200px);
+  transition: transform 0.8s linear;
+}
+.card3 {
+  background: rgb(44, 47, 224);
+  grid-column: 5/8;
+  grid-row: 6/11;
+  z-index: 1;
+  border-radius: 5px;
+  transition: transform 1.3s;
+}
+.card3:hover {
+  transform: scale(0.5);
+}
+.card4 {
+  border: 4px solid rgb(68, 15, 129);
+  grid-column: 6/9;
+  grid-row: 5/8;
+  opacity: 80%;
+  border-radius: 50%;
+  transition: transform 1.2s;
+}
+.card4:hover {
+  transform: translateY(-200px);
+}
+.card5 {
+  border: 4px solid rgb(68, 15, 129);
+  grid-column: 7/10;
+  grid-row: 3/9;
+  opacity: 80%;
+  transition: all 1.5s;
+}
+.card5:hover {
+  border-radius: 50px;
+  border: 6px dashed rgb(68, 15, 129) ;
+  transition: all 1.5s;
+
+}
+.card6 {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  grid-column: 5/10;
+  grid-row: 3/6 ;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.card6 p {
+  will-change: color, font-size;
+  margin: 0;
+  z-index: 1;
+  transition: color 1s;
+  transition: font-size 1s;
+}
+.card6 p:hover {
+  color: rgb(124, 29, 29);
+  font-size: 3.5rem;
+}
+.card7 {
+  background: #1284eb;
+  grid-column: 2/4 ;
+  grid-area: 3/4 ;
+  border-radius: 8px;
+  transition: transform 1.6s;
+}
+.card7:hover {
+  transform: scale(2.5);
+  transition: transform 1.2s;
+
+}
+.card8 {
+  font-size: 2.5rem;
+  display: grid;
+  grid-column-start: 4;
+  grid-row: 1/3;
+  writing-mode: horizontal-tb;
+  justify-items: center;
+  align-items: flex-end;
+  z-index: 1;
+  transition: color 1.2s;
+  transition: font-size 1.2s;
+}
+.card8:hover {
+  color:white;
+  font-size: 4rem;
+}
